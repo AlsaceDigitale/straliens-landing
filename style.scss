@@ -1,0 +1,23 @@
+@import 'normalize';
+@import 'config';
+
+h1, h2 {
+  font-family: Futura, Futura-Medium, "Futura Medium", "Century Gothic", CenturyGothic, "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", sans-serif;
+  color: $black;
+}
+h1 {
+  font-size: 100px;
+  font-weight: bold;
+  margin: 0;
+  text-transform: uppercase;
+}
+h2 {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+p {
+  font-family: 'PT Serif', serif;
+}
+@import 'title';
+@import 'content';
+@import 'footer';

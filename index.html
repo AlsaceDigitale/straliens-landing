@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Straliens Millenium</title>
+  <link rel="stylesheet" href="style.css">
+  <link href='http://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'>
+  <script src="scrollReveal.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script>
+    $(window).load(function() {
+      new scrollReveal();
+    });
+    $(document).ready(function() {
+      $('.scrollTo').click( function() { // Au clic sur un élément
+        var page = $(this).attr('href'); // Page cible
+        var speed = 750; // Durée de l'animation (en ms)
+        $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+        return false;
+      });
+    });
+  </script>
+</head>
+<body>
+  <div class="title">
+    <h1>
+      Straliens Millenium
+    </h1>
+    <h2>Sauvez Strasbourg de l'invasion imminente...</h2>
+    <!-- Begin MailChimp Signup Form -->
+    <div id="mc_embed_signup">
+      <form action="http://f0u.us9.list-manage.com/subscribe/post?u=f052ebd964126d8807e11cb8a&amp;id=c92c150b52" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+        <label for="mce-EMAIL">Créer votre équipe en avant-première !</label>
+        <br/>
+        <input type="email" value="" name="EMAIL" placeholder="Email" id="mce-EMAIL">
+        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+        <div style="position: absolute; left: -5000px;">
+          <input type="text" name="b_f052ebd964126d8807e11cb8a_c92c150b52" tabindex="-1" value="">
+        </div>
+        <input type="submit" value="Rejoindre le jeu" name="subscribe" id="mc-embedded-subscribe" class="button">
+      </form>
+    </div>
+    <!--End mc_embed_signup-->
+    <a class="scrollTo" href="#content">❱</a>
+  </div>
+  <div class="content" id="content">
+    <section data-sr="vF 0.2">
+      <h1>Dans Strasbourg, tout le monde vous entend crier...</h1>
+      <p>
+        En 2015, mille ans après le début de la construction de la Cathédrale, l'émetteur secret que les Straliens, une race ancienne d'extra-terrestres, avait enfoui sous Strasbourg, est prêt à fonctionner.
+        Leur plan machiavélique de destruction de la race humaine est sur le point d'aboutir.
+        Votre mission en tant que terrien est de les empêcher d'activer les sources d'énergie nécessaires pour communiquer avec leur planète mère.
+        Bien sûr, vous pouvez aussi choisir de vous associer avec eux, peut-être vous laisseront-ils une place de choix dans ce nouveau monde...
+      </p>
+    </section>
+    <section data-sr="vF 0.2">
+      <h1>"Je croyais vraiment que je les avais tous explosés."</h1>
+      <p>
+        <span>Ellen Ripley</span>, Warrant Officer, Nostromo Ship
+      </p>
+    </section>
+  </div> 
+  <footer>
+  </footer>
+</body>
+</html>

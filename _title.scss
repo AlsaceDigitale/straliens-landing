@@ -1,0 +1,89 @@
+@import 'config';
+
+.title {
+  border: 20px solid $green;
+  border-bottom: none;
+  background: url(satstras.jpg);
+  background-repeat: no-repeat; 
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  text-align: center;
+  position: relative;
+  h1 {
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    transform: translate(-50%, -50%);
+    color: $green;
+    white-space: nowrap;
+    &:after {
+      content: "";
+      display: block;
+      height: 5px;
+      width: 500px;
+      background-color: $green;
+      margin: auto;
+      margin-top: 15px;
+    }
+  }
+  h2 {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: $white;
+    font-size: 30px;
+    white-space: nowrap;
+  }
+  #mc_embed_signup {
+    background: rgba(0,0,0,0.5);
+    padding: 20px;
+    position: absolute;
+    left: 50%;
+    top: 65%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border: 3px $white solid;
+    label {
+      font-family: Futura, Futura-Medium, "Futura Medium", "Century Gothic", CenturyGothic, "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", sans-serif;
+      color: $white;
+      display: block;
+      font-size: 25px;
+    }
+    input {
+      height: 50px;
+      border: none;
+      color: $white;
+      transition-duration: 250ms;
+      &[type=email] {
+        background: $black;
+        height: 30px;
+        padding: 10px;
+        width: 200px;
+      }
+      &[type=submit] {
+        background: $green;
+        color: $black;
+        width: 150px;
+      }
+    }
+  }
+  .scrollTo {
+    color: $white;
+    text-decoration: none;
+    font-size: 200px;
+    display: block;
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: rotate(90deg) translate(0, 22%);
+    transition-duration: 250ms;
+    &:hover {
+      color: $green;
+      bottom: -50px;
+      font-size: 230px;
+    }
+  }
+}
