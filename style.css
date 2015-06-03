@@ -377,7 +377,6 @@ p {
   font-family: 'PT Serif', serif; }
 
 .title {
-  border: 20px solid #24c348;
   border-bottom: none;
   background: url(satstras.jpg);
   background-repeat: no-repeat;
@@ -387,20 +386,16 @@ p {
   text-align: center;
   position: relative; }
   .title h1 {
+    border: 5px #24c348 solid;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 5px 20px;
+    display: block;
     position: absolute;
     left: 50%;
     top: 25%;
     transform: translate(-50%, -50%);
     color: #24c348;
     white-space: nowrap; }
-    .title h1:after {
-      content: "";
-      display: block;
-      height: 5px;
-      width: 500px;
-      background-color: #24c348;
-      margin: auto;
-      margin-top: 15px; }
   .title h2 {
     position: absolute;
     left: 50%;
@@ -417,8 +412,7 @@ p {
     left: 50%;
     top: 65%;
     transform: translate(-50%, -50%);
-    text-align: center;
-    border: 3px white solid; }
+    text-align: center; }
     .title #mc_embed_signup label {
       font-family: Futura, Futura-Medium, "Futura Medium", "Century Gothic", CenturyGothic, "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", sans-serif;
       color: white;
@@ -427,19 +421,23 @@ p {
     .title #mc_embed_signup input {
       height: 50px;
       border: none;
-      color: white;
       transition-duration: 250ms; }
       .title #mc_embed_signup input[type=email] {
-        background: #2f363b;
+        background: white;
+        color: #2f363b;
         height: 30px;
         padding: 10px;
         width: 200px; }
       .title #mc_embed_signup input[type=submit] {
-        background: #24c348;
-        color: #2f363b;
-        width: 150px; }
+        width: 150px;
+        background: #2f363b;
+        color: #24c348;
+        border: 3px #24c348 solid; }
+        .title #mc_embed_signup input[type=submit]:hover {
+          background: #24c348;
+          color: #2f363b; }
   .title .scrollTo {
-    color: white;
+    color: #24c348;
     text-decoration: none;
     font-size: 200px;
     display: block;
@@ -449,7 +447,6 @@ p {
     transform: rotate(90deg) translate(0, 22%);
     transition-duration: 250ms; }
     .title .scrollTo:hover {
-      color: #24c348;
       bottom: -50px;
       font-size: 230px; }
 
