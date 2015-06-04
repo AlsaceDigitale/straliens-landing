@@ -12,12 +12,18 @@
         margin-bottom: 50px;
         display: block;
         padding: 0 100px;
+        @include mq(0, desktop) {
+          padding: 0 50px;
+        }
       }
       p {
         padding: 0 100px;
         color: $white;
         font-size: 25px;
         text-align: justify;
+        @include mq(0, desktop) {
+          padding: 0 50px;
+        }
       }
     }
     .mockup {
@@ -25,6 +31,17 @@
       height: 100%;
       position: relative;
       float: left;
+      @include mq(desktop, wide) {
+        width: 40%;
+      }
+      @include mq(0, desktop) {
+        width: 100%;
+        img {
+          max-height: 70vh;
+          width: auto !important;
+          margin-bottom: 40px;
+        }
+      }
       img {
         position: relative;
         top: 50%;

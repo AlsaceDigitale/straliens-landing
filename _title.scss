@@ -21,6 +21,18 @@
     -webkit-transform: translate(-50%, -50%);
     color: $green;
     white-space: nowrap;
+    @include mq(0, desktop) {
+      white-space: initial;
+    }
+    @include mq(desktop, wide) {
+      font-size: 70px;
+    }
+    @include mq(tablet, desktop) {
+      font-size: 50px;
+    }
+    @include mq(0, tablet) {
+      font-size: 40px;
+    }
   }
   h2 {
     position: absolute;

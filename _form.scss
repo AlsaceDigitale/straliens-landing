@@ -25,6 +25,10 @@
     }
     &[type=submit] {
       width: 150px;
+      @include mq(0, desktop) {
+        width: 220px;
+        margin-top: 10px;
+      }
       background: $black;
       color: $green;
       border: 3px $green solid;

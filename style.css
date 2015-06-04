@@ -1,3 +1,4 @@
+@charset "UTF-8";
 div, section {
   box-sizing: border-box; }
 
@@ -359,6 +360,31 @@ td,
 th {
   padding: 0; }
 
+body:before {
+  background-color: #FCF8E3;
+  border-bottom: 1px solid #FBEED5;
+  border-left: 1px solid #FBEED5;
+  color: #C09853;
+  font: small-caption;
+  padding: 3px 6px;
+  pointer-events: none;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 100; }
+  @media (min-width: 20em) {
+    body:before {
+      content: "mobile ≥ 320px (20em)"; } }
+  @media (min-width: 46.25em) {
+    body:before {
+      content: "tablet ≥ 740px (46.25em)"; } }
+  @media (min-width: 61.25em) {
+    body:before {
+      content: "desktop ≥ 980px (61.25em)"; } }
+  @media (min-width: 81.25em) {
+    body:before {
+      content: "wide ≥ 1300px (81.25em)"; } }
+
 h1, h2 {
   font-family: Futura, Futura-Medium, "Futura Medium", "Century Gothic", CenturyGothic, "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", sans-serif;
   color: #2f363b; }
@@ -403,6 +429,18 @@ body {
     -webkit-transform: translate(-50%, -50%);
     color: #24c348;
     white-space: nowrap; }
+    @media (max-width: 61.24em) {
+      .title h1 {
+        white-space: initial; } }
+    @media (min-width: 61.25em) and (max-width: 81.24em) {
+      .title h1 {
+        font-size: 70px; } }
+    @media (min-width: 46.25em) and (max-width: 61.24em) {
+      .title h1 {
+        font-size: 50px; } }
+    @media (max-width: 46.24em) {
+      .title h1 {
+        font-size: 40px; } }
   .title h2 {
     position: absolute;
     left: 50%;
@@ -465,6 +503,10 @@ body {
       background: #2f363b;
       color: #24c348;
       border: 3px #24c348 solid; }
+      @media (max-width: 61.24em) {
+        .mc_embed_signup input[type=submit] {
+          width: 220px;
+          margin-top: 10px; } }
       .mc_embed_signup input[type=submit]:hover {
         background: #24c348;
         color: #2f363b; }
@@ -479,16 +521,32 @@ body {
     margin-bottom: 50px;
     display: block;
     padding: 0 100px; }
+    @media (max-width: 61.24em) {
+      .content section:nth-child(1) .content h1 {
+        padding: 0 50px; } }
   .content section:nth-child(1) .content p {
     padding: 0 100px;
     color: white;
     font-size: 25px;
     text-align: justify; }
+    @media (max-width: 61.24em) {
+      .content section:nth-child(1) .content p {
+        padding: 0 50px; } }
   .content section:nth-child(1) .mockup {
     width: 30%;
     height: 100%;
     position: relative;
     float: left; }
+    @media (min-width: 61.25em) and (max-width: 81.24em) {
+      .content section:nth-child(1) .mockup {
+        width: 40%; } }
+    @media (max-width: 61.24em) {
+      .content section:nth-child(1) .mockup {
+        width: 100%; }
+        .content section:nth-child(1) .mockup img {
+          max-height: 70vh;
+          width: auto !important;
+          margin-bottom: 40px; } }
     .content section:nth-child(1) .mockup img {
       position: relative;
       top: 50%;
