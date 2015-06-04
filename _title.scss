@@ -18,6 +18,7 @@
     left: 50%;
     top: 25%;
     transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
     color: $green;
     white-space: nowrap;
   }
@@ -26,6 +27,7 @@
     left: 50%;
     top: 40%;
     transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
     text-align: center;
     color: $white;
     font-size: 30px;
@@ -38,6 +40,7 @@
     left: 50%;
     top: 65%;
     transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
     text-align: center;
     label {
       font-family: Futura, Futura-Medium, "Futura Medium", "Century Gothic", CenturyGothic, "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", sans-serif;
@@ -70,17 +73,22 @@
   }
   .scrollTo {
     color: $green;
-    text-decoration: none;
-    font-size: 200px;
     display: block;
     position: absolute;
-    bottom: -40px;
+    bottom: 50px;
     left: 50%;
-    transform: rotate(90deg) translate(0, 22%);
+    transform: translate(-50%, 0%) rotate(135deg);
+    -webkit-transform: translate(-50%, 0%) rotate(135deg);
     transition-duration: 250ms;
+    width: 60px;
+    height: 60px;
+    border-right: 50px solid $green;
+    border-top: 50px solid $green;
     &:hover {
-      bottom: -50px;
-      font-size: 230px;
+      width: 70px;
+      height: 70px;
+      border-right: 60px solid $green;
+      border-top: 60px solid $green;
     }
   }
 }

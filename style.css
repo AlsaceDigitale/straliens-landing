@@ -397,6 +397,7 @@ p {
     left: 50%;
     top: 25%;
     transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
     color: #24c348;
     white-space: nowrap; }
   .title h2 {
@@ -404,6 +405,7 @@ p {
     left: 50%;
     top: 40%;
     transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
     text-align: center;
     color: white;
     font-size: 30px;
@@ -415,6 +417,7 @@ p {
     left: 50%;
     top: 65%;
     transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
     text-align: center; }
     .title #mc_embed_signup label {
       font-family: Futura, Futura-Medium, "Futura Medium", "Century Gothic", CenturyGothic, "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", sans-serif;
@@ -441,17 +444,22 @@ p {
           color: #2f363b; }
   .title .scrollTo {
     color: #24c348;
-    text-decoration: none;
-    font-size: 200px;
     display: block;
     position: absolute;
-    bottom: -40px;
+    bottom: 50px;
     left: 50%;
-    transform: rotate(90deg) translate(0, 22%);
-    transition-duration: 250ms; }
+    transform: translate(-50%, 0%) rotate(135deg);
+    -webkit-transform: translate(-50%, 0%) rotate(135deg);
+    transition-duration: 250ms;
+    width: 60px;
+    height: 60px;
+    border-right: 50px solid #24c348;
+    border-top: 50px solid #24c348; }
     .title .scrollTo:hover {
-      bottom: -50px;
-      font-size: 230px; }
+      width: 70px;
+      height: 70px;
+      border-right: 60px solid #24c348;
+      border-top: 60px solid #24c348; }
 
 .content section:nth-child(1) {
   padding: 70px 0;
@@ -478,7 +486,8 @@ p {
       top: 50%;
       left: 50%;
       max-height: 80vh;
-      transform: translate(-50%, 0%); }
+      transform: translate(-50%, 0%);
+      -webkit-transform: translate(-50%, 0%); }
 .content section:nth-child(2) {
   padding: 70px 0; }
   .content section:nth-child(2) h1 {
