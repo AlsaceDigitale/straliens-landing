@@ -21,6 +21,10 @@ p {
 .clear {
   clear: both;
 }
+body {
+  background: $grey;
+}
 @import 'title';
+@import 'form';
 @import 'content';
 @import 'footer';

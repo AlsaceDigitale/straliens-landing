@@ -379,6 +379,9 @@ p {
 .clear {
   clear: both; }
 
+body {
+  background: #f2f2f2; }
+
 .title {
   border-bottom: none;
   background: url(satstras.jpg);
@@ -395,7 +398,7 @@ p {
     display: block;
     position: absolute;
     left: 50%;
-    top: 25%;
+    top: 20%;
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
     color: #24c348;
@@ -408,40 +411,15 @@ p {
     -webkit-transform: translate(-50%, -50%);
     text-align: center;
     color: white;
-    font-size: 30px;
-    white-space: nowrap; }
-  .title #mc_embed_signup {
-    background: rgba(0, 0, 0, 0.5);
-    padding: 20px;
+    font-size: 30px; }
+    .title h2 span {
+      color: #24c348;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 5px; }
+  .title .mc_embed_signup {
     position: absolute;
     left: 50%;
-    top: 65%;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    text-align: center; }
-    .title #mc_embed_signup label {
-      font-family: Futura, Futura-Medium, "Futura Medium", "Century Gothic", CenturyGothic, "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", sans-serif;
-      color: white;
-      display: block;
-      font-size: 25px; }
-    .title #mc_embed_signup input {
-      height: 50px;
-      border: none;
-      transition-duration: 250ms; }
-      .title #mc_embed_signup input[type=email] {
-        background: white;
-        color: #2f363b;
-        height: 30px;
-        padding: 10px;
-        width: 200px; }
-      .title #mc_embed_signup input[type=submit] {
-        width: 150px;
-        background: #2f363b;
-        color: #24c348;
-        border: 3px #24c348 solid; }
-        .title #mc_embed_signup input[type=submit]:hover {
-          background: #24c348;
-          color: #2f363b; }
+    top: 65%; }
   .title .scrollTo {
     color: #24c348;
     display: block;
@@ -453,13 +431,43 @@ p {
     transition-duration: 250ms;
     width: 60px;
     height: 60px;
-    border-right: 50px solid #24c348;
-    border-top: 50px solid #24c348; }
+    border-right: 40px solid #24c348;
+    border-top: 40px solid #24c348; }
     .title .scrollTo:hover {
       width: 70px;
       height: 70px;
-      border-right: 60px solid #24c348;
-      border-top: 60px solid #24c348; }
+      border-right: 50px solid #24c348;
+      border-top: 50px solid #24c348; }
+
+.mc_embed_signup {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  text-align: center; }
+  .mc_embed_signup label {
+    font-family: Futura, Futura-Medium, "Futura Medium", "Century Gothic", CenturyGothic, "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", sans-serif;
+    color: white;
+    display: block;
+    font-size: 25px; }
+  .mc_embed_signup input {
+    height: 50px;
+    border: none;
+    transition-duration: 250ms; }
+    .mc_embed_signup input[type=email] {
+      background: white;
+      color: #2f363b;
+      height: 30px;
+      padding: 10px;
+      width: 200px; }
+    .mc_embed_signup input[type=submit] {
+      width: 150px;
+      background: #2f363b;
+      color: #24c348;
+      border: 3px #24c348 solid; }
+      .mc_embed_signup input[type=submit]:hover {
+        background: #24c348;
+        color: #2f363b; }
 
 .content section:nth-child(1) {
   padding: 70px 0;
@@ -485,7 +493,7 @@ p {
       position: relative;
       top: 50%;
       left: 50%;
-      max-height: 80vh;
+      width: 70%;
       transform: translate(-50%, 0%);
       -webkit-transform: translate(-50%, 0%); }
 .content section:nth-child(2) {
@@ -503,6 +511,15 @@ p {
     font-size: 20px; }
     .content section:nth-child(2) p span {
       color: #24c348; }
+.content section:nth-child(4) {
+  margin-top: 40px;
+  background: #24c348;
+  height: 300px;
+  position: relative; }
+  .content section:nth-child(4) .mc_embed_signup {
+    position: absolute;
+    left: 50%;
+    top: 50%; }
 
 footer {
   background: #f2f2f2;

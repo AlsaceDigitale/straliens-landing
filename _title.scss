@@ -16,7 +16,7 @@
     display: block;
     position: absolute;
     left: 50%;
-    top: 25%;
+    top: 20%;
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
     color: $green;
@@ -31,45 +31,16 @@
     text-align: center;
     color: $white;
     font-size: 30px;
-    white-space: nowrap;
+    span {
+      color: $green;
+      background: rgba(black, 0.6);
+      padding: 5px;
+    }
   }
-  #mc_embed_signup {
-    background: rgba(black, 0.5);
-    padding: 20px;
+  .mc_embed_signup {
     position: absolute;
     left: 50%;
     top: 65%;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    text-align: center;
-    label {
-      font-family: Futura, Futura-Medium, "Futura Medium", "Century Gothic", CenturyGothic, "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", sans-serif;
-      color: $white;
-      display: block;
-      font-size: 25px;
-    }
-    input {
-      height: 50px;
-      border: none;
-      transition-duration: 250ms;
-      &[type=email] {
-        background: $white;
-        color: $black;
-        height: 30px;
-        padding: 10px;
-        width: 200px;
-      }
-      &[type=submit] {
-        width: 150px;
-        background: $black;
-        color: $green;
-        border: 3px $green solid;
-        &:hover {
-        background: $green;
-        color: $black;
-        }
-      }
-    }
   }
   .scrollTo {
     color: $green;
@@ -82,13 +53,13 @@
     transition-duration: 250ms;
     width: 60px;
     height: 60px;
-    border-right: 50px solid $green;
-    border-top: 50px solid $green;
+    border-right: 40px solid $green;
+    border-top: 40px solid $green;
     &:hover {
       width: 70px;
       height: 70px;
-      border-right: 60px solid $green;
-      border-top: 60px solid $green;
+      border-right: 50px solid $green;
+      border-top: 50px solid $green;
     }
   }
 }

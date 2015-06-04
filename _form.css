@@ -1,0 +1,32 @@
+.mc_embed_signup {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  position: absolute;
+  left: 50%;
+  top: 65%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  text-align: center; }
+  .mc_embed_signup label {
+    font-family: Futura, Futura-Medium, "Futura Medium", "Century Gothic", CenturyGothic, "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", sans-serif;
+    color: white;
+    display: block;
+    font-size: 25px; }
+  .mc_embed_signup input {
+    height: 50px;
+    border: none;
+    transition-duration: 250ms; }
+    .mc_embed_signup input[type=email] {
+      background: white;
+      color: #2f363b;
+      height: 30px;
+      padding: 10px;
+      width: 200px; }
+    .mc_embed_signup input[type=submit] {
+      width: 150px;
+      background: #2f363b;
+      color: #24c348;
+      border: 3px #24c348 solid; }
+      .mc_embed_signup input[type=submit]:hover {
+        background: #24c348;
+        color: #2f363b; }
