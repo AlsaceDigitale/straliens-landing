@@ -376,6 +376,9 @@ h2 {
 p {
   font-family: 'PT Serif', serif; }
 
+.clear {
+  clear: both; }
+
 .title {
   border-bottom: none;
   background: url(satstras.jpg);

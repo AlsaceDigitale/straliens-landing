@@ -18,6 +18,9 @@ h2 {
 p {
   font-family: 'PT Serif', serif;
 }
+.clear {
+  clear: both;
+}
 @import 'title';
 @import 'content';
 @import 'footer';
