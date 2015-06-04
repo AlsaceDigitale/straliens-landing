@@ -480,19 +480,52 @@ p {
       color: #24c348; }
 
 footer {
-  background: #f2f2f2; }
-  footer h2 {
+  background: #f2f2f2;
+  padding: 80px 0px; }
+  footer h1 {
+    font-size: 50px;
     text-align: center;
-    font-size: 20px;
-    text-transform: none;
-    padding: 100px 0;
-    margin: 0;
-    font-weight: 200; }
-    footer h2:after {
+    margin-bottom: 30px; }
+    footer h1:after {
       content: "";
       display: block;
       height: 4px;
-      width: 150px;
-      background-color: #aaaaaa;
+      width: 200px;
+      background-color: #2f363b;
       margin: auto;
-      margin-top: 15px; }
+      margin-top: 5px; }
+  footer .contact {
+    margin-bottom: 70px; }
+    footer .contact h2 {
+      text-align: center; }
+      footer .contact h2 a {
+        text-decoration: none;
+        font-size: 20px;
+        color: #24c348;
+        transition-duration: 250ms; }
+        footer .contact h2 a:hover {
+          color: #aaaaaa; }
+  footer .realisation {
+    height: 350px; }
+    footer .realisation h1 {
+      margin-bottom: 50px; }
+    footer .realisation div {
+      position: absolute;
+      width: 200px;
+      text-align: center; }
+      footer .realisation div a {
+        text-decoration: none; }
+        footer .realisation div a:hover h2 {
+          color: #aaaaaa; }
+      footer .realisation div img {
+        height: 150px;
+        width: 150px;
+        margin-bottom: 15px; }
+      footer .realisation div h2 {
+        font-size: 20px;
+        color: #24c348;
+        transition-duration: 250ms; }
+    footer .realisation .ad {
+      left: 52%; }
+    footer .realisation .hs {
+      right: 52%; }
