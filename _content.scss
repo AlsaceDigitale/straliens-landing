@@ -4,17 +4,34 @@
   section:nth-child(1) {
     padding: 70px 0;
     background: $green;
-    h1 {
-      font-size: 35px;
-      text-align: center;
-      margin-bottom: 50px;
-      display: block;
+    position: relative;
+    .content {
+      h1 {
+        font-size: 35px;
+        text-align: left;
+        margin-bottom: 50px;
+        display: block;
+        padding: 0 100px;
+      }
+      p {
+        padding: 0 100px;
+        color: $white;
+        font-size: 25px;
+        text-align: justify;
+      }
     }
-    p {
-      padding: 0 150px;
-      color: $white;
-      font-size: 25px;
-      text-align: justify;
+    .mockup {
+      width: 30%;
+      height: 100%;
+      position: relative;
+      float: left;
+      img {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        max-height: 80vh;
+        transform: translate(-50%, 0%);
+      }
     }
   }
   section:nth-child(2) {
