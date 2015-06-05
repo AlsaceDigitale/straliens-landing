@@ -17,8 +17,31 @@ footer {
       margin-top: 5px;
     }
   }
-  .contact {
+  .realisation {
     margin-bottom: 70px;
+    .hs {
+      position: relative;
+      width: 200px;
+      text-align: center;
+      left: 50%;
+      transform: translate(-50%, 0);
+      a {
+        text-decoration: none;
+        &:hover h2 {
+          color: $darkgrey;
+        }
+      }
+      img {
+        height: 150px;
+        width: 150px;
+        margin-bottom: 15px;
+      }
+      h2 {
+        font-size: 20px;
+        color: $green;
+        transition-duration: 250ms;
+      }
+    }
     h2 {
       text-align: center;
       a {
@@ -32,7 +55,7 @@ footer {
       }
     }
   }
-  .realisation {
+  .partenaires {
     height: 350px;
     h1 {
       margin-bottom: 50px;
@@ -61,7 +84,7 @@ footer {
     .ad {
       left: 52%;
     }
-    .hs {
+    .orange {
       right: 52%;
     }
   }
