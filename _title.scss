@@ -42,6 +42,7 @@
     left: 70%;
     top: 35%;
     transform: translate(0, -50%);
+    -webkit-transform: translate(0, -50%);
     h1 {
       font-size: 27px;
       color: $white;
@@ -50,6 +51,7 @@
       top: 47%;
       left: -50%;
       transform: translate(0, -50%);
+      -webkit-transform: translate(0, -50%);
     }
     img {
       height: 30px;
